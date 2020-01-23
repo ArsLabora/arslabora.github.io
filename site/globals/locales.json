@@ -1,0 +1,23 @@
+{
+    "languages": [{
+            "label": "English",
+            "code": "en",
+            "iso": "en_US"
+        },
+        {
+            "label": "Italiano",
+            "code": "it",
+            "iso": "it_IT"
+        },
+        {
+            "label": "Portugues",
+            "code": "pt",
+            "iso": "pt_BR"
+        },
+        {
+            "label": "日本の",
+            "code": "ja",
+            "iso": "ja_JP"
+        }
+    ]
+}

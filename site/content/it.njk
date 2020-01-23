@@ -1,0 +1,41 @@
+---
+layout: default
+meta_title: Home
+meta_description: Eleven Countries é una potente base costruita con Eleventy e TailwindCSS
+body_class: home
+title: Benvenuto a Eleven Countries!
+permalink: "/{{ locale }}/index.html"
+localeKey: "homepage"
+locale: "it"
+---
+
+<main id="main" class="main inner flex flex-1 flex-col py-10 lg:py-20 focus:outline-none" tabindex="-1">
+
+    <section id="container-centre" class="column centre flex-1">
+
+        <h1 class="page-title">{{ title }}</h1>
+
+        <div class="content">
+
+            <p>Una starter per <a href="https://www.11ty.dev/docs/">Eleventy</a>, costruita con <a href="https://tailwindcss.com">TailwindCSS</a>.</p>
+
+            <h2 class="text-3xl">Caratteristiche</h2>
+
+            <ul class="mb-12 list-disc pl-4">
+                <li>Contenuto Multi Lingua</li>
+                <li>Costruisci siti web rapidi e belli con Eleventy, TailwindCSS e SCSS</li>
+                <li>
+                    <a href="https://laravel-mix.com/docs/5.0/basic-example">Laravel Mix</a> (webpack) per caricare, concatenare e compilare stili e codici</li>
+                <li>
+                    <a href="https://www.purgecss.com/">Purgecss</a> rimuovi tutti i CSS non usati</li>
+                <li>Minimizzatore HTML</li>
+                <li>Babel, con supporto a ES6</li>
+                <li>Supporto a SEO (incluindo Open Graph e meta Twitter)</li>
+                <li>Immagini con caricamento asincrono</li>
+                <li>Un semplice blog di esempio</li>
+            </ul>
+        </div>
+
+    </section>
+
+</main>

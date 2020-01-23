@@ -1,0 +1,25 @@
+<ul class="flex flex-row pl-6">
+    {% for lang in locales.languages %}
+
+        {% for item in collections.all %}
+
+            {% if item.data.localeKey == localeKey and item.data.locale == lang.code %}
+                {% set translatedUrl = item.url %}
+                {% if lang.code != locale %}
+                    <li class="mr-2 text-orange-700">
+                        {% if helpers.environment === "development" %}
+                            <a href="{{ translatedUrl }}">{{ lang.code }}
+                            {% else %}
+                                <a href="{{ site.url }}{{ translatedUrl }}">{{ lang.code }}
+                                {% endif %}
+                            </li>
+                        {% else %}
+                            <li class="mr-2 text-gray-800">{{ lang.code }}
+                            </li>
+                        {% endif %}
+
+                    {% endif %}
+
+                {% endfor %}
+            {% endfor %}
+        </ul>

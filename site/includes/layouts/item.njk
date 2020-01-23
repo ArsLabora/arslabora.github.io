@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="{{ locale }}" class="min-h-full antialiased">
+
+    {% include "components/head.njk" %}
+
+    <body {% if body_class %} id="{{ body_class }}"{% endif %} class="text-purple-900 leading-normal text-lg">
+
+        <a class="visually-hidden" href="#main">Skip to content</a>
+
+        <div id="wrapper" class="wrapper pb-16 md:pb-0 flex flex-col relative min-h-screen">
+
+            {# include header #}
+            {% include "components/header.njk" %}
+
+            {% include "components/translations.njk" %}
+
+            {# include content #}
+
+            <div class="flex flex-row pt-4 pl-20 pr-20">
+                <div class="w-64">
+                    <img class="h-64 w-full object-cover" src="{{ image }}"></img>
+                </div>
+                <div class="pl-4">
+                    <h1 class="pt-8">{{ title }}</h1>
+                    <h3 class="pt-2">{{ intro }}</h3>
+
+                    <h2 class="">
+
+                        {% for t in tags %}
+                            <a href="/category/{{ t }}" title="{{ t }}">{{ t }}</a>
+                        {% else %}
+                        </h2>
+
+                    {% endfor %}
+
+                </div>
+
+            </div>
+            <div class="pt-4 pl-20 pr-20">
+                <div>
+                    {{ content | safe }}
+
+                </div>
+            </div>
+
+            <br>
+            <hr>
+
+            {# include footer #}
+            {% include "components/footer.njk" %}
+
+        </div>
+
+        {# include mobile nav #}
+        {% include "components/mobile-nav.njk" %}
+
+    </body>
+</html>

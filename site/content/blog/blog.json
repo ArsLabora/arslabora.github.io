@@ -1,0 +1,4 @@
+{
+    "layout": "layouts/post",
+    "permalink": "/{{ locale }}/blog/{{ page.fileSlug | unLocaleSlug }}/index.html"
+}

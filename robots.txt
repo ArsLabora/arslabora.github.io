@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://arslabora.github.io/eleven-countries/sitemap.xml

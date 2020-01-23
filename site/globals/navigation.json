@@ -1,0 +1,54 @@
+{
+    "en": [{
+            "label": "Home",
+            "url": "/en/"
+        },
+        {
+            "label": "About",
+            "url": "/en/about/"
+        },
+        {
+            "label": "Contact",
+            "url": "/en/contact/"
+        }
+    ],
+    "it": [{
+            "label": "Inizio",
+            "url": "/it/"
+        },
+        {
+            "label": "Informazioni",
+            "url": "/it/informazioni/"
+        },
+        {
+            "label": "Contatto",
+            "url": "/it/contatto/"
+        }
+    ],
+    "pt": [{
+            "label": "Início",
+            "url": "/pt/"
+        },
+        {
+            "label": "Sobre",
+            "url": "/pt/sobre/"
+        },
+        {
+            "label": "Contato",
+            "url": "/pt/contacto/"
+        }
+    ],
+    "ja": [{
+            "label": "ホーム",
+            "url": "/ja/"
+        },
+        {
+            "label": "約",
+            "url": "/ja/yaku/"
+        },
+        {
+            "label": "連絡",
+            "url": "/ja/renraku/"
+        }
+    ]
+}
