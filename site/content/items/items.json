@@ -1,4 +1,0 @@
-{
-    "layout": "layouts/item.njk",
-    "permalink": "/{{ locale }}/{{ tags[0] }}/{{ page.fileSlug | unLocaleSlug }}/index.html"
-}
